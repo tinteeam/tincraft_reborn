@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "tincraft_reborn:tin_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "tincraft_reborn:tin_ingot"
+  }
+}

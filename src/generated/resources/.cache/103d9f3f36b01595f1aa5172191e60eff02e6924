@@ -1,0 +1,4 @@
+// 1.21.1	2026-05-30T20:31:34.0529243	Registries
+6584d1353ad9061a7c16c358e4606e9a5ea5269a data/tincraft_reborn/neoforge/biome_modifier/add_tin_ore.json
+dbe1d3afe91d565659233b02ffdc5737c89d2ae7 data/tincraft_reborn/worldgen/configured_feature/tin_ore.json
+f63f4af727fb77b3ffbb64fa5b0d6a80ad6acd14 data/tincraft_reborn/worldgen/placed_feature/tin_ore_placed.json

@@ -1,0 +1,27 @@
+package io.github.randomusert.mods.tincraft_reborn.datagen;
+
+import io.github.randomusert.mods.tincraft_reborn.init.TCRBlocks;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.level.block.Block;
+
+import java.util.Set;
+
+public class ModBlockLootTableProvider extends BlockLootSubProvider {
+    protected ModBlockLootTableProvider(HolderLookup.Provider registries) {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
+    }
+
+    @Override
+    protected void generate() {
+        dropSelf(TCRBlocks.TIN_BLOCK.get());
+        dropSelf(TCRBlocks.TIN_ORE.get());
+    }
+
+    @Override
+    protected Iterable<Block> getKnownBlocks() {
+        return TCRBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+    }
+}
