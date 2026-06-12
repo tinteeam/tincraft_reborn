@@ -50,12 +50,11 @@ public class Tincraft_reborn {
 
         TCRItems.register(modEventBus);
 
-        //ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         TCRCreativeModeTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
