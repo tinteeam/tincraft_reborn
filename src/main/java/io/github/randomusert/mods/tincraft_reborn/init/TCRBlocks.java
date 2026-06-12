@@ -20,7 +20,7 @@ public class TCRBlocks {
                     .destroyTime(2.5f)
                     .sound(SoundType.STONE)
                     .explosionResistance(0.1f)
-                    .requiresCorrectToolForDrops()));
+                    ));
 
 
     public static final DeferredBlock<Block> TIN_ORE = BLOCKS.register("tin_ore",
@@ -28,7 +28,7 @@ public class TCRBlocks {
                     .destroyTime(2.5f)
                     .sound(SoundType.STONE)
                     .explosionResistance(0.1f)
-                    .requiresCorrectToolForDrops()));
+                    ));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
