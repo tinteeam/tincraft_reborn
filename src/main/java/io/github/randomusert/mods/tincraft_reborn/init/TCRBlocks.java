@@ -3,6 +3,8 @@ package io.github.randomusert.mods.tincraft_reborn.init;
 import io.github.randomusert.mods.tincraft_reborn.Tincraft_reborn;
 import io.github.randomusert.mods.tincraft_reborn.blocks.TinBlock;
 import io.github.randomusert.mods.tincraft_reborn.blocks.TinOre;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -16,7 +18,8 @@ public class TCRBlocks {
 
 
     public static final DeferredBlock<Block> TIN_BLOCK = BLOCKS.register("tin_block",
-            () -> new TinBlock(BlockBehaviour.Properties.of()
+            registryName -> new TinBlock(BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
                     .destroyTime(2.5f)
                     .sound(SoundType.STONE)
                     .explosionResistance(0.1f)
@@ -24,7 +27,8 @@ public class TCRBlocks {
 
 
     public static final DeferredBlock<Block> TIN_ORE = BLOCKS.register("tin_ore",
-            () -> new TinOre(BlockBehaviour.Properties.of()
+            registryName -> new TinOre(BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
                     .destroyTime(2.5f)
                     .sound(SoundType.STONE)
                     .explosionResistance(0.1f)
