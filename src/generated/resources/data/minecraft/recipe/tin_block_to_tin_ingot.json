@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "tincraft_reborn:tin_block"
-    }
+    "tincraft_reborn:tin_block"
   ],
   "result": {
     "count": 9,

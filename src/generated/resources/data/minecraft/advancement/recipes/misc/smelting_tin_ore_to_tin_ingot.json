@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:tin_ore_to_tin_ingot"
+        "recipe": "minecraft:smelting_tin_ore_to_tin_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:tin_ore_to_tin_ingot"
+      "minecraft:smelting_tin_ore_to_tin_ingot"
     ]
   }
 }
