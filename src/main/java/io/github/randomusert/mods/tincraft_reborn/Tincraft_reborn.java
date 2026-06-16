@@ -1,6 +1,8 @@
 package io.github.randomusert.mods.tincraft_reborn;
 
 import com.mojang.logging.LogUtils;
+import com.tterrag.registrate.Registrate;
+import io.github.randomusert.mods.tincraft_reborn.init.TCRBlockEntities;
 import io.github.randomusert.mods.tincraft_reborn.init.TCRBlocks;
 import io.github.randomusert.mods.tincraft_reborn.init.TCRCreativeModeTabs;
 import io.github.randomusert.mods.tincraft_reborn.init.TCRItems;
@@ -8,6 +10,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -43,12 +46,16 @@ public class Tincraft_reborn {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    private static final Registrate REGISTRATE = Registrate.create(MODID)
+            .defaultCreativeTab((ResourceKey<CreativeModeTab>) null);
+
     public Tincraft_reborn(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         TCRBlocks.register(modEventBus);
 
         TCRItems.register(modEventBus);
+        TCRBlockEntities.register();
 
         TCRCreativeModeTabs.register(modEventBus);
 
@@ -68,6 +75,10 @@ public class Tincraft_reborn {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    public static Registrate registrate() {
+        return REGISTRATE;
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

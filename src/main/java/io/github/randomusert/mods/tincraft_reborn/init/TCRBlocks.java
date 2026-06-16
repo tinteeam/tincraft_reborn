@@ -2,6 +2,7 @@ package io.github.randomusert.mods.tincraft_reborn.init;
 
 import io.github.randomusert.mods.tincraft_reborn.Tincraft_reborn;
 import io.github.randomusert.mods.tincraft_reborn.blocks.TinBlock;
+import io.github.randomusert.mods.tincraft_reborn.blocks.TinFurnaceBlock;
 import io.github.randomusert.mods.tincraft_reborn.blocks.TinOre;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -33,6 +34,11 @@ public class TCRBlocks {
                     .sound(SoundType.STONE)
                     .explosionResistance(0.1f)
                     ));
+
+    public static final DeferredBlock<TinFurnaceBlock> TIN_FURNACE = BLOCKS.register("tin_furnace",
+            registryName -> new TinFurnaceBlock(BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
+                    .noLootTable()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
