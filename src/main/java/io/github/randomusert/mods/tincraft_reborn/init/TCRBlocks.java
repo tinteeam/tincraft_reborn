@@ -45,6 +45,9 @@ public class TCRBlocks {
     public static final BlockEntry<TestBlock> TEST_BLOCK = REGISTRATE.block("test_block", TestBlock::new)
             .simpleItem()
             .register();
+    public static final BlockEntry<TinFurnaceBlock> TIN_FURNACE = REGISTRATE.block("tin_furnace", TinFurnaceBlock::new)
+            .simpleItem()
+            .register();
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

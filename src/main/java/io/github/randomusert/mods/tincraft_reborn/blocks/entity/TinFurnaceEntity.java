@@ -13,13 +13,11 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class TinFurnaceEntity extends AbstractFurnaceBlockEntity {
-    protected TinFurnaceEntity(BlockEntityType<?> type, BlockPos worldPosition, BlockState blockState, RecipeType<? extends AbstractCookingRecipe> recipeType) {
-        super(type, worldPosition, blockState, recipeType);
-    }
 
-    /*public TinFurnaceEntity(BlockPos worldPosition, BlockState blockState) {
-        super(TCRBlockEntities.TIN_FURNACE.get(), worldPosition, blockState, RecipeType.SMELTING);
-    }*/
+
+    public TinFurnaceEntity(BlockEntityType<?> type, BlockPos worldPosition, BlockState blockState) {
+        super(type, worldPosition, blockState, RecipeType.SMELTING);
+    }
 
 
     @Override

@@ -17,6 +17,10 @@ public class TCRBlockEntities {
             .validBlock(TCRBlocks.TEST_BLOCK)
             .register();
 
+    public static final BlockEntityEntry<TinFurnaceEntity> TIN_FURNACE_ENTITY = REGISTRATE.blockEntity("tin_furnace", TinFurnaceEntity::new)
+            .validBlock(TCRBlocks.TIN_FURNACE)
+            .register();
+
 
 
     // Required empty method. This makes sure that this class gets called

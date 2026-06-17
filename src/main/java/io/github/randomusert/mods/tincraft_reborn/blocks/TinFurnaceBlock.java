@@ -43,29 +43,22 @@ public class TinFurnaceBlock extends AbstractFurnaceBlock {
         }
     }
 
-    /*
-    @Override
-    public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState blockState, BlockEntityType<T> type) {
-        return createFurnaceTicker(level, type, TCRBlockEntities.TIN_FURNACE.get());
-    }*/
 
     @Override
     public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState blockState, BlockEntityType<T> type) {
-        return super.getTicker(level, blockState, type);
+        return createFurnaceTicker(level, type, TCRBlockEntities.TIN_FURNACE_ENTITY.get());
     }
-/*
-    @Override
-    public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new TinFurnaceEntity(blockPos, blockState);
-    }*/
+
+
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return null;
+        return new TinFurnaceEntity(TCRBlockEntities.TIN_FURNACE_ENTITY.get(),blockPos, blockState);
     }
 
+
     @Override
-    protected InteractionResult useItemOn(ItemStack itemStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
         if (player.level().getBlockEntity(pos) == null || !(player.level().getBlockEntity(pos) instanceof TinFurnaceEntity TFE)) {
             return InteractionResult.PASS;
         }

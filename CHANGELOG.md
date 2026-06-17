@@ -8,7 +8,7 @@ Port to 26.1
 ## 0.3
 ### Additions
 * Test Block (entity)
-
+* Tin Furnace
 ### Fixes
 *N/A*
 ### removed
