@@ -2,10 +2,7 @@ package io.github.randomusert.mods.tincraft_reborn;
 
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
-import io.github.randomusert.mods.tincraft_reborn.init.TCRBlockEntities;
-import io.github.randomusert.mods.tincraft_reborn.init.TCRBlocks;
-import io.github.randomusert.mods.tincraft_reborn.init.TCRCreativeModeTabs;
-import io.github.randomusert.mods.tincraft_reborn.init.TCRItems;
+import io.github.randomusert.mods.tincraft_reborn.init.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
@@ -41,10 +38,11 @@ public class Tincraft_reborn {
         TCRBlockEntities.register();
 
         TCRCreativeModeTabs.register(modEventBus);
+        TCRVillagers.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
-        
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -64,14 +62,4 @@ public class Tincraft_reborn {
         return REGISTRATE;
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MODID, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-        }
-    }
 }

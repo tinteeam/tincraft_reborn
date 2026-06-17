@@ -5,10 +5,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 import io.github.randomusert.mods.tincraft_reborn.Tincraft_reborn;
 import io.github.randomusert.mods.tincraft_reborn.api.TCRRegistrate;
-import io.github.randomusert.mods.tincraft_reborn.blocks.TestBlock;
-import io.github.randomusert.mods.tincraft_reborn.blocks.TinBlock;
-import io.github.randomusert.mods.tincraft_reborn.blocks.TinFurnaceBlock;
-import io.github.randomusert.mods.tincraft_reborn.blocks.TinOre;
+import io.github.randomusert.mods.tincraft_reborn.blocks.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
@@ -49,6 +46,10 @@ public class TCRBlocks {
             .simpleItem()
             .register();
 
+
+    public static final BlockEntry<TinUpgradeTradingStation> TIN_UPGRADE_TRADING_STATION = REGISTRATE.block("tin_upgrade_trading_station", TinUpgradeTradingStation::new)
+            .simpleItem()
+            .register();
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

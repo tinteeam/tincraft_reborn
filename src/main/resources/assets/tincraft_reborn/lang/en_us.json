@@ -5,6 +5,8 @@
   "creativetab.tincraft_reborn.main": "tincraft main tab",
   "block.tincraft_reborn.test_block": "Test Block (Entity)",
   "blockentity.tincraft_reborn.tin_furnace": "Tin Furnace",
-  "block.tincraft_reborn.tin_furnace": "Tin Furnace"
+  "block.tincraft_reborn.tin_furnace": "Tin Furnace",
+  "block.tincraft_reborn.tin_upgrade_trading_station": "Tin Upgrade Trading Station",
+  "entity.minecraft.villager.tincraft_reborn.tin_upgrader": "Tin Upgrader"
 
 }
