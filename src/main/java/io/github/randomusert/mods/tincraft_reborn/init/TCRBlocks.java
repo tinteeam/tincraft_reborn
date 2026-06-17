@@ -1,6 +1,11 @@
 package io.github.randomusert.mods.tincraft_reborn.init;
 
+import com.tterrag.registrate.Registrate;
+import com.tterrag.registrate.util.entry.BlockEntry;
+import com.tterrag.registrate.util.entry.RegistryEntry;
 import io.github.randomusert.mods.tincraft_reborn.Tincraft_reborn;
+import io.github.randomusert.mods.tincraft_reborn.api.TCRRegistrate;
+import io.github.randomusert.mods.tincraft_reborn.blocks.TestBlock;
 import io.github.randomusert.mods.tincraft_reborn.blocks.TinBlock;
 import io.github.randomusert.mods.tincraft_reborn.blocks.TinFurnaceBlock;
 import io.github.randomusert.mods.tincraft_reborn.blocks.TinOre;
@@ -15,6 +20,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class TCRBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Tincraft_reborn.MODID);
+    private static final Registrate REGISTRATE = Tincraft_reborn.registrate();
 
 
 
@@ -35,10 +41,10 @@ public class TCRBlocks {
                     .explosionResistance(0.1f)
                     ));
 
-    public static final DeferredBlock<TinFurnaceBlock> TIN_FURNACE = BLOCKS.register("tin_furnace",
-            registryName -> new TinFurnaceBlock(BlockBehaviour.Properties.of()
-                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
-                    .noLootTable()));
+
+    public static final BlockEntry<TestBlock> TEST_BLOCK = REGISTRATE.block("test_block", TestBlock::new)
+            .simpleItem()
+            .register();
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

@@ -43,14 +43,25 @@ public class TinFurnaceBlock extends AbstractFurnaceBlock {
         }
     }
 
+    /*
     @Override
     public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState blockState, BlockEntityType<T> type) {
         return createFurnaceTicker(level, type, TCRBlockEntities.TIN_FURNACE.get());
-    }
+    }*/
 
+    @Override
+    public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState blockState, BlockEntityType<T> type) {
+        return super.getTicker(level, blockState, type);
+    }
+/*
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
         return new TinFurnaceEntity(blockPos, blockState);
+    }*/
+
+    @Override
+    public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
+        return null;
     }
 
     @Override
