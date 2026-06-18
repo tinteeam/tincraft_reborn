@@ -3,11 +3,11 @@
   "experience": 2,
   "price_multiplier": 0.05,
   "wants": {
-    "id": "minecraft:emerald",
-    "count": 32
+    "id": "tincraft_reborn:tin_ingot",
+    "count": 7
   },
   "gives": {
-    "id": "minecraft:diamond",
+    "id": "minecraft:emerald",
     "count": 1
   }
 }

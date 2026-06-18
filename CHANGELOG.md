@@ -16,3 +16,15 @@ Port to 26.1
 *N/A*
 ### removed
 *N/A*
+
+
+## 0.3.1
+### Additions
+* Proper trades for the villager profession
+* Message to tell the user that the mod has a newer version
+
+### Fixes
+* Fixed the update check not checking correctly using the modrinth api without ?neoforge=only at the end
+
+### Removed
+* The temporary trades

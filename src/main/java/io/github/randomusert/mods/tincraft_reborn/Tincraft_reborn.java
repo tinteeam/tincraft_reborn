@@ -4,17 +4,23 @@ import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
 import io.github.randomusert.mods.tincraft_reborn.init.*;
 import net.minecraft.client.Minecraft;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
+import net.neoforged.fml.VersionChecker;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLLoader;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
 
@@ -56,6 +62,32 @@ public class Tincraft_reborn {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @SubscribeEvent
+    public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
+        if (!FMLLoader.getCurrent().isProduction()) {
+            return;
+        }
+
+        if (!(event.getEntity() instanceof ServerPlayer player)) {
+            return;
+        }
+
+        var modContainer = ModList.get()
+                .getModContainerById(MODID)
+                .orElse(null);
+
+        if (modContainer == null) {
+            return;
+        }
+
+        var result = VersionChecker.getResult(modContainer.getModInfo());
+
+        if (result.status() == VersionChecker.Status.OUTDATED) {
+            player.sendSystemMessage(Component.literal("A new tincraft Reborn version is available: "
+            + result.target().getCanonical()));
+        }
     }
 
     public static Registrate registrate() {

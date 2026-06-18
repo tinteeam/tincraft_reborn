@@ -1,0 +1,13 @@
+{
+  "max_uses": 12,
+  "experience": 10,
+  "price_multiplier": 0.05,
+  "wants": {
+    "id": "tincraft_reborn:tin_block",
+    "count": 6
+  },
+  "gives": {
+    "id": "minecraft:iron_block",
+    "count": 1
+  }
+}

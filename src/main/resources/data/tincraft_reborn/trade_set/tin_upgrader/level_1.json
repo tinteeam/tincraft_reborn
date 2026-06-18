@@ -1,6 +1,7 @@
 {
-  "amount": 1,
+  "amount": 2,
   "trades": [
-    "tincraft_reborn:tin_upgrader/level_1_trade"
+    "tincraft_reborn:tin_upgrader/1/tin_ingot",
+    "tincraft_reborn:tin_upgrader/1/emerald"
   ]
 }
