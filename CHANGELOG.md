@@ -5,10 +5,13 @@ Added initial content
 ## 0.2
 Port to 26.1
 
-## 0.3
+## 0.3 | Age of machines Part 1
 ### Additions
 * Test Block (entity)
 * Tin Furnace
+* Villager Profession
+* custom point of interest for villagers
+
 ### Fixes
 *N/A*
 ### removed
