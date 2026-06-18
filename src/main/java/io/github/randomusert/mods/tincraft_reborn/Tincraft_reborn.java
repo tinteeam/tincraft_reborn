@@ -38,9 +38,9 @@ public class Tincraft_reborn {
     public Tincraft_reborn(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-        TCRBlocks.register(modEventBus);
+        TCRBlocks.register();
 
-        TCRItems.register(modEventBus);
+        TCRItems.register();
         TCRBlockEntities.register();
 
         TCRCreativeModeTabs.register(modEventBus);

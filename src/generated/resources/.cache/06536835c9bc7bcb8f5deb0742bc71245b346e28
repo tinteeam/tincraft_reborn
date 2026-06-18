@@ -1,9 +1,0 @@
-// 26.1	2026-06-14T17:20:38.2391973	Model Definitions - tincraft_reborn
-16393a078fb7f29fca682a4773fc47a46b2acd0a assets/tincraft_reborn/blockstates/tin_block.json
-f9d0aeb70533845f90eff68a3e76162d784f78d7 assets/tincraft_reborn/blockstates/tin_ore.json
-b07ac2c7202ad7d3ec162554a56b88aec6cbc050 assets/tincraft_reborn/items/tin_block.json
-35025c4cd232812f772627fe8db3f037b790f532 assets/tincraft_reborn/items/tin_ingot.json
-0423a56a6d1be8bf0b2de884e848c29db5e0908c assets/tincraft_reborn/items/tin_ore.json
-99dd166d69e2d68501df0361630f018533cecfba assets/tincraft_reborn/models/block/tin_block.json
-a86b4585b9088b3c2fcab306a727a689935b35a5 assets/tincraft_reborn/models/block/tin_ore.json
-42e98d6c6182a73b792d8980ae6adf682eeb7aed assets/tincraft_reborn/models/item/tin_ingot.json

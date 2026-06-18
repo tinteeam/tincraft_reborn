@@ -20,6 +20,8 @@ public class TCRCreativeModeTabs {
                         output.accept(TCRItems.TIN_INGOT);
                         output.accept(TCRBlocks.TIN_BLOCK);
                         output.accept(TCRBlocks.TIN_ORE);
+                        output.accept(TCRBlocks.TIN_UPGRADE_TRADING_STATION);
+                        output.accept(TCRBlocks.TIN_FURNACE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

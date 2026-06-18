@@ -1,7 +1,0 @@
-// 26.1	2026-06-14T17:20:38.235195	Tincraft Reborn Recipes
-dd482bb57e2f1c90e52cec26969cfe10dd04b79d data/minecraft/advancement/recipes/misc/smelting_tin_ore_to_tin_ingot.json
-c55c7aa5f3481e8ee6815e05603b79922ea5c2c4 data/minecraft/advancement/recipes/misc/tin_block_to_tin_ingot.json
-434bd6641e66a7b0c6fe1177ba6f75f319c3efa4 data/minecraft/recipe/smelting_tin_ore_to_tin_ingot.json
-75886041bd468585536360a7da16f1426505e3f7 data/minecraft/recipe/tin_block_to_tin_ingot.json
-808e8e096e50ae573f5463e165ed842d855867fa data/tincraft_reborn/advancement/recipes/misc/tin_block.json
-f60e02bbd7d08df1a854a1e238c8fb736a2a60dd data/tincraft_reborn/recipe/tin_block.json
