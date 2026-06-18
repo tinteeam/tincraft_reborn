@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tincraft_reborn:block/tin_furnace"
+  }
+}

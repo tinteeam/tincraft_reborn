@@ -1,0 +1,25 @@
+// 26.1	2026-06-18T19:07:24.6537475	Registrate Provider for tincraft_reborn [Registries, Data Maps, , Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Model Definitions - tincraft_reborn, Lang (en_us/en_ud), generic_client_provider]
+4fd871dd0f651f1bd4b686efe02f63f9005cafec assets/tincraft_reborn/blockstates/test_block.json
+16393a078fb7f29fca682a4773fc47a46b2acd0a assets/tincraft_reborn/blockstates/tin_block.json
+aefb48f5f1631b5a5ca0fb00fba0dfa4ba56a1e3 assets/tincraft_reborn/blockstates/tin_furnace.json
+f9d0aeb70533845f90eff68a3e76162d784f78d7 assets/tincraft_reborn/blockstates/tin_ore.json
+84938e5a504716289522aa544a2e91181f802689 assets/tincraft_reborn/blockstates/tin_upgrade_trading_station.json
+25149446be9404e01f462a20e00ac718af7a700c assets/tincraft_reborn/items/test_block.json
+b07ac2c7202ad7d3ec162554a56b88aec6cbc050 assets/tincraft_reborn/items/tin_block.json
+5e929d8c98248044371a2732c655aeacfde7572c assets/tincraft_reborn/items/tin_furnace.json
+35025c4cd232812f772627fe8db3f037b790f532 assets/tincraft_reborn/items/tin_ingot.json
+0423a56a6d1be8bf0b2de884e848c29db5e0908c assets/tincraft_reborn/items/tin_ore.json
+bb62d98bb828816a99d80cf357ea7fb3ef836ae4 assets/tincraft_reborn/items/tin_upgrade_trading_station.json
+9401f0f52db73d7a91b6bce47ea13b67abe96700 assets/tincraft_reborn/lang/en_ud.json
+bd8069484c2e87d1e06f2a18c5de65d5fc4257e6 assets/tincraft_reborn/lang/en_us.json
+96de7b1e28ea11b1c104899358e0b036c22808c9 assets/tincraft_reborn/models/block/test_block.json
+99dd166d69e2d68501df0361630f018533cecfba assets/tincraft_reborn/models/block/tin_block.json
+a7bd0fc62e1af6c8fa622ee4a9c1b8e5cf43462f assets/tincraft_reborn/models/block/tin_furnace.json
+a86b4585b9088b3c2fcab306a727a689935b35a5 assets/tincraft_reborn/models/block/tin_ore.json
+84555b41481ca7c5e34d7824463fad1ba640a451 assets/tincraft_reborn/models/block/tin_upgrade_trading_station.json
+42e98d6c6182a73b792d8980ae6adf682eeb7aed assets/tincraft_reborn/models/item/tin_ingot.json
+84acfe3a6867aec575b22a50c7de2373c3a06c38 data/tincraft_reborn/loot_table/blocks/test_block.json
+ae820215adbed8b5500c18da596b61d96746f195 data/tincraft_reborn/loot_table/blocks/tin_block.json
+b7b1c4b94b3dc8c3e154d71ba7d1ff6166daa142 data/tincraft_reborn/loot_table/blocks/tin_furnace.json
+c86e764d5b2b72277d59044ef4baac4199838f07 data/tincraft_reborn/loot_table/blocks/tin_ore.json
+30160cb7717312908b8ea093dbcc22e55f7e1862 data/tincraft_reborn/loot_table/blocks/tin_upgrade_trading_station.json
