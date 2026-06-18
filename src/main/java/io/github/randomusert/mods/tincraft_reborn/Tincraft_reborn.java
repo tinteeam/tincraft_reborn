@@ -65,7 +65,7 @@ public class Tincraft_reborn {
     }
 
     @SubscribeEvent
-    public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
+    public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
         if (!FMLLoader.getCurrent().isProduction()) {
             return;
         }
