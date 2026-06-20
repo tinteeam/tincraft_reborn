@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "tincraft_reborn:item/ultimate_sword"
+  }
+}

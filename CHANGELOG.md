@@ -33,5 +33,13 @@ Port to 26.1
 this update fixes a mod loading issue
 
 
-### 0.4.0
+## 0.4.0
 Update only touches backend stuff of the mod
+
+## 0.5.0 | Age of machines Part 2
+### Additions
+* Ultimate Sword
+
+### Removed
+
+### Fixes

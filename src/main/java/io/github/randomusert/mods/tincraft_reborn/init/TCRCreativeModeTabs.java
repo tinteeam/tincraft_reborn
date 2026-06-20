@@ -22,6 +22,7 @@ public class TCRCreativeModeTabs {
                         output.accept(TCRBlocks.TIN_ORE);
                         output.accept(TCRBlocks.TIN_UPGRADE_TRADING_STATION);
                         output.accept(TCRBlocks.TIN_FURNACE);
+                        output.accept(TCRItems.ULTIMATE_SWORD);
                     }).build());
 
     public static void register(IEventBus eventBus) {
