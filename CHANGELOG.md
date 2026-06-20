@@ -28,3 +28,10 @@ Port to 26.1
 
 ### Removed
 * The temporary trades
+
+## 0.3.2
+this update fixes a mod loading issue
+
+
+### 0.4.0
+Update only touches backend stuff of the mod
