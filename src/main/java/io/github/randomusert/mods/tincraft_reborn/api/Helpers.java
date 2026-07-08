@@ -18,4 +18,6 @@ public class Helpers {
     }
 
     public static final Identifier ULTRA_CRAFTER_BG_TEXTURE = rl("tincraft_reborn", "textures/gui/ultra_crafter/ultra_crafter.png");
+
+    public static final Identifier ULTRA_CRAFTER_SLOT_TEXTURE_LOC = rl("tincraft_reborn", "textures/gui/ultra_crafter/slots/ultra_crafting_slot.png");
 }

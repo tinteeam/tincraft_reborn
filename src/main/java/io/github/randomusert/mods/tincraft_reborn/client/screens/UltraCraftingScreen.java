@@ -8,10 +8,19 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.Slot;
 
 public class UltraCraftingScreen extends AbstractContainerScreen<UltraCraftingMenu> {
+
+    private boolean printed = false;
+
     public UltraCraftingScreen(UltraCraftingMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
+    }
+
+    @Override
+    protected void init() {
+        super.init();
     }
 
     @Override
@@ -23,7 +32,18 @@ public class UltraCraftingScreen extends AbstractContainerScreen<UltraCraftingMe
                 Helpers.ULTRA_CRAFTER_BG_TEXTURE,
                 this.leftPos, this.topPos,
                 0, 0,
-                this.imageWidth, this.imageWidth,
+                this.imageWidth, this.imageHeight,
                 256, 256);
+    }
+
+
+    @Override
+    public void onClose() {
+        super.onClose();
+    }
+
+    @Override
+    public void removed() {
+        super.removed();
     }
 }
