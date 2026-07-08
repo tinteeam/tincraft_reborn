@@ -43,6 +43,10 @@ public class TCRBlocks {
     public static final BlockEntry<TinUpgradeTradingStation> TIN_UPGRADE_TRADING_STATION = REGISTRATE.block("tin_upgrade_trading_station", TinUpgradeTradingStation::new)
             .simpleItem()
             .register();
+
+    public static final BlockEntry <UltraCrafter> ULTRA_CRAFTER = REGISTRATE.block("ultra_crafter", UltraCrafter::new)
+            .simpleItem()
+            .register();
     public static void register() {
 
     }

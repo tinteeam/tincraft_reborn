@@ -39,6 +39,7 @@ Update only touches backend stuff of the mod
 ## 0.5.0 | Age of machines Part 2
 ### Additions
 * Ultimate Sword
+* Ultra crafting table
 
 ### Removed
 
