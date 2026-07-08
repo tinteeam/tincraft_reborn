@@ -1,6 +1,7 @@
 package io.github.randomusert.mods.tincraft_reborn.blocks;
 
 import com.mojang.serialization.MapCodec;
+import io.github.randomusert.mods.tincraft_reborn.menus.UltraCraftingMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
@@ -43,7 +44,7 @@ public class UltraCrafter extends Block {
     @Override
     protected @Nullable MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
         return new SimpleMenuProvider(
-                (containerId, inv, player) -> new CraftingMenu(containerId, inv, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE
+                (containerId, inv, player) -> new UltraCraftingMenu(containerId, inv), CONTAINER_TITLE
         );
     }
 }
